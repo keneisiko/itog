@@ -376,7 +376,7 @@ button{
     height: 454px;
     background-size:cover;
     background-position: center;
-    background-image: url(../www/img/eightimg.jpg);
+    background-image: url(www/img/eightimg.jpg);
    
 }
 .dropdown{
@@ -507,7 +507,7 @@ button{
         padding-top: 100px;
         height: 464px;
         width: 100%;
-        background-image: url(../www/img/mobimg.jpg);
+        background-image: url(www/img/mobimg.jpg);
         margin-bottom: 40px;
     }
     .txt{
