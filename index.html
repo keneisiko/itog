@@ -45,13 +45,13 @@
                 <div class="txthead num">+7 900 280 2777</div>
             </div>
         </div>
-        <div class="firstimg"></div>
+        <div class="firstimg" style="background-image: url(www/img/firstimg.jpg);"></div>
         
         <div class="txtq"><div class="txt"><b>Погружаем в прекрасное</b></div></div>
         <main>
             <div class="littxt text1" id="text">Lorem Ipsum (читается как «Лорем Ипсум») — это текст-заглушка, текст-рыба, обычно используемый дизайнерами и веб-разработчиками для демонстрации того, в каких местах сайта или приложения будет находиться текст, какого он будет объема и каким шрифтом написан. Текст состоит из латинских слов и фраз, но не несет в себе какого-то особого смысла.</div>
             <div class="bigtxt text2"><b>Совершите увлекательное путешествие по Кавказу с завораживающими видами</b></div>
-            <div class="arrow"><img src="../www/img/Arrowblack.png" alt=""></div>
+            <div class="arrow"><img src="www/img/Arrowblack.png" alt=""></div>
             <button class="littxt black">Заказать тур</button>
             <div class="littxt gray" id="Tour">Какие бывают туры</div>
             <div class="secondsec">
@@ -87,7 +87,7 @@
                         <a href="#">Заказать →</a></div>
                 </div>
             </div>
-            <div class="imgdef bigtxt"><div>Adygtour — это не только поездки в горы, но и наслаждение морскими прогулками. Невероятные морские пейзажи, фантастические закаты!</div></div>
+            <div class="imgdef bigtxt" style="background-image: url(www/img/eightimg.jpg);"><div>Adygtour — это не только поездки в горы, но и наслаждение морскими прогулками. Невероятные морские пейзажи, фантастические закаты!</div></div>
             <div class="bigtxt afimgdef"><b>Бронируете свой отдых! А мы сделаем вашу поездку незабываемой!</b></div>
             <button class="littxt black">Заказать тур</button>
             <div class="lastsec" id="ser">
@@ -106,22 +106,22 @@
         </main>
     </body>
     <script>
-        // function toggleMenu() {
-        // const burger = document.querySelector('.burger');
-        //     burger.classList.toggle('active');
-        //     }
-            const images = document.querySelectorAll('.box.img');
-            const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Наблюдение прекращается после появления
-                }
-            });
-            }, {
-                threshold: 0.5 // Анимация запускается, когда 50% изображения в видимой области
-            });
+        function toggleMenu() {
+        const burger = document.querySelector('.burger');
+            burger.classList.toggle('active');
+            }
+            // const images = document.querySelectorAll('.box.img');
+            // const observer = new IntersectionObserver(entries => {
+            // entries.forEach(entry => {
+            //     if (entry.isIntersecting) {
+            //     entry.target.classList.add('visible');
+            //     observer.unobserve(entry.target); // Наблюдение прекращается после появления
+            //     }
+            // });
+            // }, {
+            //     threshold: 0.5 // Анимация запускается, когда 50% изображения в видимой области
+            // });
 
-            images.forEach(image => observer.observe(image));
+            // images.forEach(image => observer.observe(image));
     </script>  
 </html>
