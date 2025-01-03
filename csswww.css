@@ -5,7 +5,7 @@
     
 }
 .imgdef{
-    background-image: url(../www/img/eightimg.jpg);
+    background-image: url(img/eightimg.jpg);
    
 }
 .lastsec{
@@ -65,7 +65,7 @@ a{
 .firstimg{
     background-position: center;
     background-size:cover;
-    background-image: url(../www/img/firstimg.jpg)
+    background-image: url(img/firstimg.jpg)
 }
 .num{
     padding-bottom: 5px;
@@ -427,7 +427,7 @@ opacity: 0;
     height: 454px;
     background-size:cover;
     background-position: center;
-    background-image: url(../www/img/eightimg.jpg);
+    background-image: url(img/eightimg.jpg);
    
 }
 .dropdown{
@@ -582,7 +582,7 @@ opacity: 0;
         padding-top: 100px;
         height: 464px;
         width: 100%;
-        background-image: url(../www/img/mobimg.jpg);
+        background-image: url(img/mobimg.jpg);
         margin-bottom: 40px;
     }
     .txt{
