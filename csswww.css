@@ -98,7 +98,7 @@ main > *:before{
     padding-bottom: 10px;
     text-align: center;
 }
-@media screen and (max-width:860px) {
+
     
     .about{
         display: none;
@@ -284,4 +284,4 @@ main > *:before{
     .lastsec > *:before{
     margin: auto;
 }
-}
+
