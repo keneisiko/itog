@@ -1,11 +1,11 @@
-
 *{
     font-family: 'Inter';
     margin:0;
     padding:0;
+    
 }
 .imgdef{
-    background-image: url(www/img/eightimg.jpg);
+    background-image: url(../www/img/eightimg.jpg);
    
 }
 .lastsec{
@@ -51,6 +51,7 @@
 a{
     text-decoration: none;
     color: black;
+    
 }
 .q{
     margin-right:30px ;
@@ -64,10 +65,14 @@ a{
 .firstimg{
     background-position: center;
     background-size:cover;
-    background-image: url(www/img/firstimg.jpg)
+    background-image: url(../www/img/firstimg.jpg)
 }
 .num{
     padding-bottom: 5px;
+}
+img{
+    background-position: center;
+    background-size:cover;
 }
 button{
     margin: auto;
@@ -93,18 +98,31 @@ main > *:before{
     padding-bottom: 10px;
     text-align: center;
 }
-/* .img.visible{
-    opacity: 1;
-    transform: translateY(0);
-} */
 @media screen and (min-width:1280px) {
-.img{
-    
-    /* opacity: 1;
-    transform: translateY(0);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out; */
+    .img{
+        position: relative;
+        width: 328px;
+        height: 180px;
+    }
+    .img img{
+        display: block;
+        width: 328px;
+        height: 180px;
+    }
+    .gradient-overlay {
+        width: 328px;
+        height: 180px;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+        z-index: 1;
+        transition: opacity 0.3s linear;
+      }
+.img:hover .gradient-overlay{
+    opacity: 0;
 }
-
     .burger{
     display: none;
 }
@@ -323,6 +341,15 @@ main{
 .text1{
     width: 477px;
 }
+.black:hover{
+    background-color: #776BFF;
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+.whiteb:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
 .text2{
     width: 360px;
 }
@@ -345,6 +372,30 @@ button{
 }
 .about{
     margin: auto;
+}
+.img{
+    position: relative;
+    width: 320px;
+    height: 180px;
+}
+.img img{
+    display: block;
+    width: 320px;
+    height: 180px;
+}
+.gradient-overlay {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 180px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+    z-index: 1;
+    transition: opacity 0.3s linear;
+  }
+.img:hover .gradient-overlay{
+opacity: 0;
 }
 .secondsec{
     display: grid;
@@ -376,7 +427,7 @@ button{
     height: 454px;
     background-size:cover;
     background-position: center;
-    background-image: url(www/img/eightimg.jpg);
+    background-image: url(../www/img/eightimg.jpg);
    
 }
 .dropdown{
@@ -442,7 +493,8 @@ button{
     font-size: 16px;
 }
 }
-@media screen and (max-width:767px){
+@media screen and   (min-width:320px) and (max-width:767px){
+    
     .about{
         display: none;
     } 
@@ -476,30 +528,51 @@ button{
         margin-bottom:8.335px ;
     }
     .dropdown{
-        display: none;
+        /* display: none; */
         width: 100vw;
         height: 100vh;
         background-color: black;
         position: absolute;
-        top:0;
+        top: 0;
         left: 0; 
-        z-index: 3;
+        z-index: -1;
         color: white;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(100%);
     }
 
       .burger.active .dropdown{
         display: block;
+        transform: translateX(0);
       }
+      .burger.active .palka:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+        background-color: white;
+        z-index: 4;
+      }
+      
+      .burger.active .palka:nth-child(2) {
+        opacity: 0;
+        z-index: 4;
+      }
+      
+      .burger.active .palka:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px); 
+        background-color: white;
+        z-index: 4;
+      }
+      
       .logo{
         width: 123.81px;
         height: 44px;
         margin-left: 21px;
+        z-index: -2;
       }
       .header{
         width:100%;
         position: fixed;
         height: 100px;
-        position: block;
+        position: fixed;
         background-color: white;
         z-index: 2;
     }
@@ -507,16 +580,18 @@ button{
         padding-top: 100px;
         height: 464px;
         width: 100%;
-        background-image: url(www/img/mobimg.jpg);
+        background-image: url(../www/img/mobimg.jpg);
         margin-bottom: 40px;
     }
     .txt{
         position: absolute;
+        width: 238px;
+        height: 84px;
         top:441px;
         font-size:35px ;
         left:20px;
     }
-    .main{
+    main{
         display: grid;
         grid-template-rows: repeat(2,auto) 1fr 50px auto 1877px 454px auto 50px 702px repeat(3,auto);
         grid-row-gap: 40px;
@@ -581,12 +656,27 @@ button{
     main > *,
     main > *:after,
     main > *:before{
-    margin-bottom:40px ;
+    margin: auto;
 }
     .bigtxt{
         font-size: 16px;
     }
     .afimgdef{
         width: 246px;
+        height: auto;
     }
+    .lastsec{
+        height: 360px;
+        width: 582px;
+        display: grid;
+        grid-template-rows: auto 1fr repeat(4, auto);
+        grid-row-gap: 40px;
+        padding-top: 60px;
+        padding-bottom:60px ;
+    }
+    .lastsec > *,
+    .lastsec > *:after,
+    .lastsec > *:before{
+    margin: auto;
+}
 }
