@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="csswww.css">
         <title>
 
@@ -8,29 +9,32 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-         
+         <script>function toggleMenu() {
+            const burger = document.querySelector('.burger');
+                burger.classList.toggle('active');
+                }</script>
     </head>
     <body>
         <div class="header">
-            <div class="logo"><img src="www/img/logo.png"></div>
+            <div class="logo"><img src="../www/img/logo.png"></div>
             <div class="burger" onclick="toggleMenu()">
                 <div class="palka f"></div>
                 <div class="palka s"></div>
                 <div class="palka t"></div>
                 <div class="dropdown">
-                    <div class="headerdrop" style="display: flex; justify-content: space-between;">
-                        <div class="logodrop" style="margin-left: 21px; margin-top: 28px;"><img src="www/img/logophone.png" alt=""></div>
-                        <div class="crest" style="margin-right: 30px; margin-top: 28px;"><img src="www/img/crest.png" alt=""></div>
+                    <div class="headerdrop">
+                        <div class="content"  style="display: flex; justify-content: space-between;">
+                        <div class="logodrop" style="margin-left: 27px; margin-top: 28px;"><img src="../www/img/logophone.png" alt=""></div>
                     </div>
                     <div class="main" style="display: flex;flex-direction: column;width: 360px; height: 167px; color: white; margin-top: 167px;">
-                        <a style="margin: auto;margin-bottom: 40px; color: white; width: auto;">О нас</a>
-                        <a style="margin: auto;margin-bottom: 40px; color: white; width: auto;">Туры</a>
-                        <a style="margin: auto;color: white; width: auto;">Сертификат</a>
+                        <a href="#text">О нас</a>
+                        <a href="#Tour">Туры</a>
+                        <a href="#ser">Сертификат</a>
                     </div>
                     <div class="footer" style="display: flex; flex-direction: column;align-items: center;justify-content: center;margin-top: 95px;">
-                        <div class="foototop"><img src="www/img/icontgw.png" alt=""><img src="www/img/iconww.png" alt=""></div>
+                        <div class="foototop"><img src="../www/img/icontgw.png" alt=""><img src="../www/img/iconww.png" alt=""></div>
                         <div>+7 900 280 2777</div>
-                        <button>Заказать тур</button>
+                        <button>Заказать тур</button></div>
                     </div>
                 </div>
             </div>
@@ -40,69 +44,69 @@
                 <a href="#ser" class="txthead w">Сертификат</a>
             </div></b>
             <div class="numbers">
-                <div class="icon" style="padding-right: 8px;"><img src="www/img/tg_icon.png" alt=""></div>
-                <div class="icon" style="padding-right: 8px;"><img src="www/img/waticon.png" alt=""></div>
+                <div class="icon" style="padding-right: 8px;"><img src="../www/img/tg_icon.png" alt=""></div>
+                <div class="icon" style="padding-right: 8px;"><img src="../www/img/waticon.png" alt=""></div>
                 <div class="txthead num">+7 900 280 2777</div>
             </div>
         </div>
-        <div class="firstimg" style="background-image: url(www/img/firstimg.jpg);"></div>
+        <div class="firstimg"></div>
         
         <div class="txtq"><div class="txt"><b>Погружаем в прекрасное</b></div></div>
         <main>
-            <div class="littxt text1" id="text">Lorem Ipsum (читается как «Лорем Ипсум») — это текст-заглушка, текст-рыба, обычно используемый дизайнерами и веб-разработчиками для демонстрации того, в каких местах сайта или приложения будет находиться текст, какого он будет объема и каким шрифтом написан. Текст состоит из латинских слов и фраз, но не несет в себе какого-то особого смысла.</div>
+            <div class="littxt text1" id="text">Lorem Ipsum (читается как «Лорем Ипсум») — это текст-за глушка, текст-рыба, обычно используемый дизайнерами и веб-разработчиками для демонстрации того, в каких местах сайта или приложения будет находиться текст, какого он будет объема и каким шрифтом написан. Текст состоит из латинских слов и фраз, но не несет в себе какого-то особого смысла.</div>
             <div class="bigtxt text2"><b>Совершите увлекательное путешествие по Кавказу с завораживающими видами</b></div>
-            <div class="arrow"><img src="www/img/Arrowblack.png" alt=""></div>
+            <div class="arrow"><img src="../www/img/Arrowblack.png" alt=""></div>
             <button class="littxt black">Заказать тур</button>
             <div class="littxt gray" id="Tour">Какие бывают туры</div>
             <div class="secondsec">
                 <div class="box high">
                     <div class="title midtxt"><b>Тур выходного дня</b></div>
-                    <div class="img"><img src="www/img/secimg.jpg" alt=""></div>
+                    <div class="img img1"><img src="../www/img/secimg.jpg" alt=""><div class="gradient-overlay"></div></div>
                     <div class="text">Отличная возможно отдохнуть и наполнится энергией перед рабочей неделей. <a href="#">Заказать →</a></div>
                 </div>
                 <div class="box high">
                     <div class="title midtxt"><b>Однодневные туры</b></div>
-                    <div class="img"><img src="www/img/thirdimg.jpg" alt=""></div>
+                    <div class="img img2"><img src="../www/img/thirdimg.jpg" alt=""><div class="gradient-overlay"></div></div>
                     <div class="text">Однодневные поездки туда, где шумят водопады, где от горных видов, каньонов и ущельев перехватывает дух. <a href="#">Заказать →</a></div>
                 </div>
                 <div class="box high">
                     <div class="title midtxt"><b>Многодневные туры </b></div>
-                    <div class="img"><img src="www/img/fourthimg.jpg" alt=""></div>
+                    <div class="img img3"><img src="../www/img/fourthimg.jpg" alt=""><div class="gradient-overlay"></div></div>
                     <div class="text">Авторские походы, а также знаменитые маршруты. Проживание  в палатках, гостиницах, гостевых домах. <a href="#">Заказать →</a></div>
                 </div>
                 <div class="box">
                     <div class="title midtxt"><b>Автобусные туры</b></div>
-                    <div class="img"><img src="www/img/fifthimg.jpg" alt=""></div>
+                    <div class="img img4"><img src="../www/img/fifthimg.jpg" alt=""><div class="gradient-overlay"></div></div>
                     <div class="text">Отправим ся в путешествие на комфортабельном микроавтобусе на 8 человек. <a href="#">Заказать →</a></div>
                 </div>
                 <div class="box">
                     <div class="title midtxt"><b>Индивидуальные</b></div>
-                    <div class="img"><img src="www/img/sixthimg.jpg" alt=""></div>
+                    <div class="img img15"><img src="../www/img/sixthimg.jpg" alt=""><div class="gradient-overlay"></div></div>
                     <div class="text">Туры, направленные на полную перезагрузку. Вы получите яркие эмоции и массу новых впечатлений. Выбирайте отдых, который вам по душе: активный или релаксационный. Отдых, в котором вы найдете себя настоящего. <a href="#">Заказать →</a></div>
                 </div>
                 <div class="box">
                     <div class="title midtxt"><b>Мужские туры</b></div>
-                    <div class="img"><img src="www/img/seventhimg.jpg" alt=""></div>
+                    <div class="img img6"><img src="../www/img/seventhimg.jpg" alt=""><div class="gradient-overlay"></div></div>
                     <div class="text">Полное погружение в горную атмосферу, вдалеке от городской суеты: конные туры, дайвинг, сплавы по горным рекам, квадроциклы, полёты на параплане.<br>
                         <a href="#">Заказать →</a></div>
                 </div>
             </div>
-            <div class="imgdef bigtxt" style="background-image: url(www/img/eightimg.jpg);"><div>Adygtour — это не только поездки в горы, но и наслаждение морскими прогулками. Невероятные морские пейзажи, фантастические закаты!</div></div>
+            <div class="imgdef bigtxt"><div>Adygtour — это не только поездки в горы, но и наслаждение морскими прогулками. Невероятные морские пейзажи, фантастические закаты!</div></div>
             <div class="bigtxt afimgdef"><b>Бронируете свой отдых! А мы сделаем вашу поездку незабываемой!</b></div>
             <button class="littxt black">Заказать тур</button>
             <div class="lastsec" id="ser">
                 <div class="midtxt txtl">А если хотите сделать оригинальный подарок близкому человеку</div>
-                <div><img src="www/img/Arrow.png" alt=""></div>
+                <div><img src="../www/img/Arrow.png" alt=""></div>
                 <div class="verbigtxt txtl"><b>Сертификат Adyg Tour</b></div>
                 <div class="midtxt"><b>это то, что вам нужно!</b></div>
                 <div class="verlittxt ltxt">Подарочный сертификат от Adygtour это любая услуга нашей компании. Эксклюзивный тур, обучение горным лыжам или сноуборде, проживание в лучших домиках в горах. Можно выбрать из готовых туров или с возможностью выбора маршрута.</div>
                 <button class="littxt whiteb">Порадовать близкого</button>
             </div>
-            <div class="foot" ><img src="www/img/logofoot.png" alt=""></div>
+            <div class="foot" ><img src="../www/img/logofoot.png" alt=""></div>
             <div class="foot ftxt">Мы предоставляем страхование и договор на услуги.
                 Услуги профессиональных гидов, трансфер, экскурсии по Кавказу.
                 Оказываем помощь в бронировании и размещении.</div>
             <div class="foot"><b>2025</b></div>
         </main>
-    </body> 
+    </body>
 </html>
