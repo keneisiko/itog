@@ -300,7 +300,7 @@ button{
     text-align: center;
 }
 }
-@media screen and (min-width:768px) and (max-width:1279px){
+@media screen and (min-width:721px) and (max-width:1279px){
 main{
     width: 100%;
     display: grid;
@@ -493,7 +493,7 @@ opacity: 0;
     font-size: 16px;
 }
 }
-@media screen and   (min-width:320px) and (max-width:767px){
+@media screen and (max-width:720px){
     
     .about{
         display: none;
@@ -569,7 +569,7 @@ opacity: 0;
         z-index: -2;
       }
       .header{
-        width:100%;
+        width:100vw;
         position: fixed;
         height: 100px;
         position: fixed;
@@ -579,7 +579,7 @@ opacity: 0;
     .firstimg{
         padding-top: 100px;
         height: 464px;
-        width: 100%;
+        width: 100vw;
         background-image: url(../www/img/mobimg.jpg);
         margin-bottom: 40px;
     }
@@ -595,7 +595,7 @@ opacity: 0;
         display: grid;
         grid-template-rows: repeat(2,auto) 1fr 50px auto 1877px 454px auto 50px 702px repeat(3,auto);
         grid-row-gap: 40px;
-        
+        width: 100vw;
     }
     .text1{
         width: 320px;
